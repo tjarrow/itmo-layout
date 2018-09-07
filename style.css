@@ -441,9 +441,7 @@ html {
  .nav_active {
      display: flex;
 }
- .menu-btn_clicked {
-     background: url(img/close.png) no-repeat !important;
-}
+
  @media screen and (max-width: 1199px) {
      h3 {
          font-size: 42px;

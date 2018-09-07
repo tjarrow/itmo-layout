@@ -1,7 +1,6 @@
 $(document).ready(function () {
     $('.menu-btn').on ('click', function() {
-          $('nav').toggleClass('nav_active');
-        $(this).toggleClass('.menu-btn_clicked');
+        $('nav').toggleClass('nav_active');
     });
 
     $('#map-container').hover(function() {
