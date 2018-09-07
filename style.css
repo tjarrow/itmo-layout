@@ -1,0 +1,645 @@
+html {
+     height: 100%;
+     font-size: 100%;
+}
+ body {
+     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+     width: 100%;
+     height: 100%;
+     margin: 0;
+}
+ @font-face {
+     font-family: MullerBlack;
+     src: url(fonts/MullerBlack.ttf);
+}
+ @font-face {
+     font-family: MullerBold;
+     src: url(fonts/MullerBold.ttf);
+}
+ @font-face {
+     font-family: MullerLight;
+     src: url(fonts/MullerLight.ttf);
+}
+ @font-face {
+     font-family: MullerRegular;
+     src: url(fonts/MullerRegular.ttf);
+}
+ @font-face {
+     font-family: MullerThin;
+     src: url(fonts/MullerThin.ttf);
+}
+ a {
+     text-decoration: none;
+}
+ h3 {
+     margin: 0;
+     width: max-content;
+     font-size: 48px;
+     font-family: MullerBold;
+}
+ p {
+     margin: 0;
+}
+ header {
+     position: relative;
+     background: url(img/10-2.png) 100% 0% no-repeat, url(img/Rectangle.png) no-repeat;
+     background-size: contain,cover;
+     padding-top: 20px;
+     padding-bottom: 120px;
+     margin-bottom: 59px;
+}
+ .menu-btn {
+     display: none;
+     background: url(img/menu-button.png) no-repeat;
+     width: 50px;
+     height: 50px;
+     position: relative;
+     transition: 200ms;
+     float: right;
+}
+ nav {
+     display: flex;
+     flex-flow: row;
+     margin-top: 20px;
+}
+ nav > a {
+     margin-left: 25px;
+     color: #fff;
+     font-size: 16px;
+     text-transform: uppercase;
+}
+ .main-logo {
+     float: left;
+     width: 300px;
+     height: 45px;
+     margin-left: 61px;
+     margin-right: 82px;
+     background: url(img/Logo.png) no-repeat;
+}
+ .header-content {
+     margin-top: 148px;
+     margin-left: 61px;
+     width: 383px;
+     font-size: 20px;
+     color: #fff;
+}
+ .header-content > h3 {
+     padding-bottom: 14px;
+}
+ .content-caption {
+     width: max-content;
+     color: #000D8C;
+     margin: 0 auto;
+     font-size: 48px;
+     margin-bottom: 48px;
+}
+ figure {
+     margin: 0;
+}
+ .programs {
+     display: grid;
+     grid-gap: 32px;
+     grid-template-columns: repeat(3, 1fr);
+     grid-template-rows: 178px 178px;
+     max-width: 1216px;
+     margin: 0 auto;
+     margin-bottom: 80px;
+}
+ .programs > figure {
+     display: flex;
+     align-items: center;
+}
+ .program:nth-child(1) {
+     grid-column-start: 1;
+     grid-column-end: 4;
+     background: url(img/pattern.png), #0EA8C7;
+     justify-content: space-between;
+}
+ .programs > * {
+     color: #fff;
+}
+ .program:nth-child(1) > p {
+     font-size: 20px;
+     width: 526px;
+}
+ .btn {
+     line-height: 40px;
+     padding: 0 15px;
+     width: max-content;
+     height: 40px;
+     text-align: center;
+     background: #FF8400;
+     color: #fff;
+}
+ .program:nth-child(1) > .btn {
+     margin-right: 55px;
+}
+ figure > span {
+     text-transform: uppercase;
+     font-size: 25px;
+     font-weight: 700;
+     text-align: center;
+}
+ .program:nth-child(1) > span {
+     margin-left: 105px;
+}
+ .program:nth-child(2) {
+     background: url(img/pattern2.png), #FF8400;
+     justify-content: space-around;
+}
+ .program:nth-child(3) {
+     background: url(img/pattern3.png), #3949E7;
+     justify-content: space-around;
+}
+ .program:nth-child(4) {
+     background: url(img/pattern4.png), #000D8C;
+     justify-content: space-around;
+}
+ .alumni {
+     width: 863px;
+     height: 308px;
+     box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.16);
+    ;
+     margin: 0 auto;
+     display: flex;
+     align-items: center;
+}
+ img[class*="arrow-"] {
+     display: block;
+     width: 48px;
+     height: 48px;
+     border-radius: 50%;
+}
+ img[class*="arrow-"]:hover {
+     cursor: pointer;
+}
+ .arrow-left {
+     background: url(img/ar-left.png) no-repeat, #EAEFFC;
+     background-position: 50%;
+     margin-left: 112px;
+}
+ .arrow-right {
+     background: url(img/ar-right.png) no-repeat, #EAEFFC;
+     background-position: 50%;
+     margin-right: 112px;
+}
+ .flex-container {
+     display: flex;
+     margin-bottom: 91px;
+     align-items: center;
+}
+ .alumni-content {
+     width: 520px;
+     margin-right: 69px;
+     display: flex;
+     flex-flow: column;
+}
+ .alumni > img {
+     width: 176px;
+     height: 176px;
+     border-radius: 50%;
+     background: url(img/face.png);
+     margin-left: 66px;
+     margin-right: 32px;
+}
+ .alumni-content > .btn {
+     margin-top: 32px;
+}
+ .alumni-content > span {
+     font-weight: 700;
+     font-size: 22px;
+     margin-bottom: 24px;
+     font-family: MullerBold;
+}
+ .alumni-content > p {
+     font-size: 18px;
+}
+ .about {
+     display: flex;
+     background-color: #3951E3;
+     align-items: center;
+}
+ .about-content {
+     width: 624px;
+     display: flex;
+     flex-direction: column;
+     margin-right: 126px;
+}
+ .about > h3 {
+     color: #fff;
+     width: 345px;
+     margin-left: 144px;
+     margin-bottom: 0;
+}
+ .about-content > p {
+     margin-top: 59px;
+     margin-bottom: 21px;
+     color: #fff;
+     font-size: 18px;
+     line-height: 29px;
+}
+ .about-content > .btn {
+     margin-bottom: 79px;
+}
+ .career {
+     background: url(img/Rectangle2.png) no-repeat 88% 0%, url(img/IMG_6600.png) no-repeat 100% 0%, url(img/Rectangle3.png);
+     padding-top: 102px;
+     margin-bottom: 89px;
+}
+ .career-content {
+     margin-left: 149px;
+     width: 586px;
+     display: flex;
+     flex-direction: column;
+}
+ .career-content > h3 {
+     margin: 0 ;
+}
+ .career-content > p {
+     margin:24px 0 ;
+     line-height: 26px;
+}
+ .career-content > .btn {
+     margin-bottom: 93px;
+}
+ .faq {
+     display: flex;
+     margin: 0 auto;
+     width: 592px;
+     height: 322px;
+     flex-direction: column;
+     margin-bottom: 50px;
+}
+ .faq-elem {
+     padding: 0 25px;
+     background: #EAEFFC;
+     width: 592px;
+     height: 56px;
+     justify-content: space-between;
+     align-items: center;
+     display: flex;
+     margin-bottom: 8px;
+     font-size: 18px;
+     font-weight: 600;
+}
+ .faq-elem > img {
+     background: url(img/ar-down.png);
+     background-position: 50%;
+     width: 15px;
+     height: 10px;
+}
+ .faq-elem > img:hover {
+     cursor: pointer;
+}
+ .feedback {
+     display: flex;
+     padding-top: 56px;
+     background: #3951E3;
+}
+ .feedback-social {
+     width: 480px;
+     margin-left: 146px;
+     margin-right: 137px;
+}
+ .feedback-social > h3 {
+     color: #fff;
+}
+ .feedback-social > .btn {
+     padding: 12px 25px;
+}
+ .feedback-social > p {
+     margin: 24px 0;
+     line-height: 32px;
+     color: #fff;
+}
+ .social-icons {
+     display: flex;
+     margin: 24px 0;
+}
+ .social-icons > i {
+     display: block;
+     width: 48px;
+     height: 48px;
+     border-radius: 50%;
+     margin-right: 8px;
+}
+ .social-icons > i:hover {
+     cursor: pointer;
+}
+ #vk {
+     background:url(img/vk.png) 50% no-repeat, #fff;
+}
+ #vk:hover {
+     background:url(img/vk_hover.png) 50% no-repeat, #fff;
+}
+ #fb {
+     background:url(img/fb.png) 50% no-repeat, #fff;
+}
+ #fb:hover {
+     background:url(img/fb_hover.png) 50% no-repeat, #fff;
+}
+ #instagram {
+     background:url(img/inst.png) 50% no-repeat, #fff;
+}
+ #instagram:hover {
+     background:url(img/inst_hover.png) 50% no-repeat, #fff;
+}
+ #ok {
+     background:url(img/ok.png) 50% no-repeat, #fff;
+}
+ #ok:hover {
+     background:url(img/ok_hover.png) 50% no-repeat, #fff;
+}
+ .feedback-contacts {
+     max-width: 488px;
+     max-height: 410px;
+     background: #fff;
+     padding: 40px 48px 59px 45px;
+     margin-right: 48px;
+     box-shadow: -29px 15px 0 0 rgba(34, 54, 192, 0.5);
+}
+ .feedback-contacts > h2 {
+     font-size: 24px;
+     line-height: 32px;
+     color: #000D8C;
+}
+ .feedback-contacts > p {
+     line-height: 32px;
+     margin-top: 33px;
+}
+ .feedback-contacts > a {
+     color: #3951E3;
+}
+ #map-container {
+     width: 100%;
+     height: 400px;
+}
+ #map {
+     opacity: 0.5;
+}
+ .black-and-white {
+     filter: grayscale(50%);
+     background-color: #000D8C;
+}
+ footer {
+     background: #000D8C;
+     padding-top: 43px;
+}
+ .footer-upper {
+     display: flex;
+}
+ .copyright {
+     margin-left: 49px;
+}
+ .copyright > p {
+     padding-top: 23px;
+     color: rgba(255, 255, 255, 0.5);
+     line-height: 19px;
+}
+ .itmo-logo {
+     display: block;
+     width: 215px;
+     height: 23px;
+     background: url(img/logo_wh_1.png);
+}
+ .links {
+     margin-left: 120px;
+}
+ .links-container {
+     display: flex;
+     flex-direction: row;
+}
+ .links-column > a {
+     color: #fff;
+     margin-bottom: 15px;
+}
+ .links > span {
+     margin-top: 18px;
+     text-transform: uppercase;
+     color: rgba(255, 255, 255, 0.4);
+     font-weight: 600;
+}
+ .links-column {
+     display: flex;
+     flex-direction: column;
+     width: max-content;
+     margin-right: 80px;
+     margin-top: 18px;
+}
+ .footer-lower {
+     padding: 12px 65px 12px 49px;
+     background: #000A6D;
+}
+ .info-project {
+     display: flex;
+     justify-content: space-between;
+}
+ .info-project > a {
+     color: rgba(255, 255, 255, 0.4);
+}
+ .nav_active {
+     display: flex;
+}
+ .menu-btn_clicked {
+     background: url(img/close.png) no-repeat !important;
+}
+ @media screen and (max-width: 1199px) {
+     h3 {
+         font-size: 42px;
+    }
+     .main-logo {
+         margin-left: 40px;
+         margin-right: 40px;
+    }
+     .content-caption {
+         font-size: 42px;
+    }
+     figure > span {
+         font-size: 23px;
+    }
+     .program:nth-child(1) > p {
+         font-size: 18px;
+    }
+     .about-content {
+         width: 575px;
+         margin-right: 110px;
+    }
+     .career {
+         background: url(img/Rectangle2.png) no-repeat 86% 0%, url(img/IMG_6600.png) no-repeat 100% 0%, url(img/Rectangle3.png);
+    }
+     .career-content {
+         width: 540px;
+    }
+     .feedback-contacts > h2 {
+         font-size: 22px;
+    }
+}
+ @media screen and (max-width: 991px) {
+     .header-content {
+         font-size: 18px;
+    }
+     .program:nth-child(1) > p {
+         font-size: 20px;
+         width: 420px;
+    }
+     .program:nth-child(1) > p {
+         font-size: 16px;
+    }
+     figure > span {
+         font-size: 20px;
+    }
+     h3 {
+         font-size: 36px;
+    }
+     nav {
+         padding-top: 15px;
+         padding-right: 15px;
+         flex-flow: column;
+         max-width: 300px;
+         float: right;
+         margin-top: 40px;
+         display: none;
+         box-shadow: 0px 0px 16px 8px rgba(0, 0, 0, 0.2);
+    }
+     nav > a {
+         margin-bottom: 15px;
+    }
+     .career {
+         background: url(img/Rectangle2.png) no-repeat 80% 0%, url(img/IMG_6600.png) no-repeat 100% 0%, url(img/Rectangle3.png);
+    }
+     .feedback-contacts > p {
+         line-height: 26px;
+         margin-top: 20px;
+         font-size: 13px;
+    }
+     .feedback-contacts > a {
+         font-size: 14px;
+    }
+     .feedback-contacts > h2 {
+         font-size: 18px;
+    }
+     .menu-btn {
+         display: block;
+    }
+     .footer-upper {
+         flex-direction: column;
+    }
+     .links {
+         margin-left: 49px;
+         margin-top: 40px;
+    }
+     .feedback-contacts {
+         padding: 19px 33px 40px 30px;
+    }
+     .feedback-social > p {
+         margin: 20px 0;
+         line-height: 28px;
+         font-size: 15px;
+    }
+     .feedback-social > .btn {
+         padding: 8px 15px;
+    }
+     .content-caption {
+         font-size: 36px;
+    }
+     .faq-elem {
+         font-size: 15px;
+         height: 45px;
+    }
+     .about > h3 {
+         margin-left: 100px;
+    }
+     .about-content > p {
+         font-size: 15px;
+         line-height: 24px;
+    }
+     .alumni-content > p {
+         font-size: 16px;
+    }
+     .arrow-left {
+         margin-left: 60px;
+    }
+     .arrow-right {
+         margin-right: 60px;
+    }
+     .alumni {
+         width: 694px;
+    }
+}
+ @media screen and (max-width: 768px) {
+     .programs {
+         grid-template-columns: repeat(1, 1fr);
+         grid-template-rows: repeat( 4, 178px);
+         width: 700px;
+    }
+     .content-caption {
+         font-size: 32px;
+    }
+     .alumni {
+         width: 584px;
+    }
+     .alumni-content > p {
+         font-size: 14px;
+    }
+     .feedback {
+         flex-direction: column;
+    }
+     .feedback-contacts {
+         width: 300px;
+         padding: 19px 28px 36px 23px;
+         margin-left: 146px;
+         margin-top: 30px;
+    }
+     .career {
+         background: url(img/Rectangle2.png) no-repeat 52% 0%, url(img/IMG_6600.png) no-repeat 100% 0%, url(img/Rectangle3.png);
+    }
+     .career-content {
+         margin-left: 60px;
+         width: 338px;
+    }
+     .about > h3 {
+         margin-left: 80px;
+         margin-right: 50px;
+    }
+     .about-content > p {
+         font-size: 14px;
+         line-height: 20px;
+    }
+     .program:nth-child(1) > .btn {
+         margin-right: 33px;
+    }
+     .alumni-content {
+         width: 378px;
+         margin-right: 25px;
+    }
+     .arrow-left {
+         margin-left: 20px;
+    }
+     .arrow-right {
+         margin-right: 20px;
+    }
+     .alumni > img {
+         width: 100px;
+         height: 100px;
+         background: url(img/face.png);
+         background-size: cover;
+    }
+     .info-project > a {
+         margin-bottom: 10px;
+    }
+     .info-project {
+         flex-flow: column;
+    }
+     .program:nth-child(1) > span {
+         margin-left: 40px;
+    }
+     .program:nth-child(1) {
+         grid-column-end: 1;
+         background: url(img/pattern.png), #0EA8C7;
+         justify-content: space-between;
+    }
+     header {
+         padding-bottom: 80px;
+    }
+}
+ 
