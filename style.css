@@ -34,6 +34,7 @@ html {
  h3 {
      margin: 0;
      width: max-content;
+     width: -moz-max-content;
      font-size: 48px;
      font-family: MullerBold;
 }
@@ -88,6 +89,7 @@ html {
 }
  .content-caption {
      width: max-content;
+     width: -moz-max-content;
      color: #000D8C;
      margin: 0 auto;
      font-size: 48px;
@@ -126,6 +128,7 @@ html {
      line-height: 40px;
      padding: 0 15px;
      width: max-content;
+     width: -moz-max-content;
      height: 40px;
      text-align: center;
      background: #FF8400;
@@ -424,6 +427,7 @@ html {
      display: flex;
      flex-direction: column;
      width: max-content;
+     width: -moz-max-content;
      margin-right: 80px;
      margin-top: 18px;
 }
